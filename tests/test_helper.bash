@@ -191,7 +191,7 @@ run_relative() {
 
 
 project_dir="alphabet"
-repo_dir="$PWD/$project_dir"
+repo_dir="$PWD/$project_dir/$project_dir"
 
 cleanup() {
     # handle case where teardown doesn't run because of unhandled failure
