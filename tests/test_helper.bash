@@ -212,7 +212,7 @@ setup() {
         poetry run cookiecutter . \
             --overwrite-if-exists \
             --no-input \
-            repo_dir="$repo_dir" \
+            project_name="$repo_dir" \
             editor="echo"
 
         # setup example repo
