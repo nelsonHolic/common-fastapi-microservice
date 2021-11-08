@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String
 
-from microservice.database.models.base import Base
+from {{cookiecutter.project_name}}.database.models.base import Base
 
 
 class User(Base):

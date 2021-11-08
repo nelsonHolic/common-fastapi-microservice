@@ -1,4 +1,4 @@
-PROJECT_NAME=microservice
+PROJECT_NAME={{cookiecutter.project_name}}
 
 .PHONY: no_targets__ list
 no_targets__:

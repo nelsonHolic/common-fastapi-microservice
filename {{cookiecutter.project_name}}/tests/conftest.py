@@ -1,7 +1,7 @@
 import pytest
 from fastapi.testclient import TestClient
 
-from microservice.app import app
+from {{cookiecutter.project_name}}.app import app
 
 
 @pytest.fixture()
