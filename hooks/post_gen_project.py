@@ -2,8 +2,7 @@ import os
 
 base_dir = os.getcwd()
 project_name = '{{cookiecutter.project_name}}'
-repo_dir = '{{cookiecutter.repo_dir}}'
-project_path = f'{base_dir}/{project_name}'
+project_path = f'{project_name}'
 
 # https://github.com/cookiecutter/cookiecutter/issues/955
 for root, dirs, files in os.walk(base_dir):
@@ -23,4 +22,4 @@ print(f'\techo "source {project_path}/utils.sh" >> ~/.bashrc')
 
 print()
 print('\033[0;33mTo setup git hooks run the following:\033[0m')
-print(f'\tln -s {project_path}/githooks/commit-msg {repo_dir}/.git/hooks/commit-msg')
+print(f'\tln -s {project_path}/githooks/commit-msg {project_name}/.git/hooks/commit-msg')
