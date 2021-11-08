@@ -222,9 +222,9 @@ setup() {
         # https://stackoverflow.com/questions/10603671/how-to-add-a-local-repo-and-treat-it-as-a-remote-repo
         # git -C "$repo_dir/.git" remote add origin "$fake_remote/.git"
         # https://stackoverflow.com/a/35899275/6305204
-        git -C "$repo_dir" remote add origin "https://github.com/ConorSheehan1/cookiecutter-jira-project"
+        git -C "$repo_dir" remote add origin "https://github.com/nelsonHolic/common-fastapi-microservice.git"
         git -C "$repo_dir" fetch
-        git -C "$repo_dir" checkout master
+        git -C "$repo_dir" checkout main
         # git branch --set-upstream-to=origin/master master
     fi
 
