@@ -5,7 +5,7 @@ from typing import Optional, Generator
 from sqlalchemy import create_engine, engine
 from sqlalchemy.orm import sessionmaker, Session as OrmSession
 
-from microservice.config import config
+from {{cookiecutter.project_name}}.config import config
 
 SQLALCHEMY_DATABASE_URL = os.getenv("DB_CONN")
 

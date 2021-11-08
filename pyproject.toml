@@ -1,33 +1,20 @@
 [tool.poetry]
-name = "intent_detector_service"
+name = "common-fastapi-microservice"
 version = "0.1.0"
-description = "Larabot intent detector microservice"
+description = "A cookiecutter template for a common fast api microservice"
 authors = ["nelsoHolic <nelson.holic@gmail.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.9"
-fastapi-manage = "^0.8.0"
-fastapi = "^0.63.0"
-fastapi-versioning = "^0.8.0"
-passlib = {extras = ["bcrypt"], version = "^1.7.4"}
-bcrypt = "^3.2.0"
-python-dotenv = {extras = ["cli"], version = "^0.17.1"}
-transformers = "^4.6.1"
-pydantic = {extras = ["email"], version = "^1.7.3"}
-SQLAlchemy = "^1.4.26"
-alembic = "^1.7.4"
-psycopg2= "^2.9.1"
+cookiecutter = "^1.7.3"
 
 [tool.poetry.dev-dependencies]
-pytest = "^6.2.3"
-mypy = "^0.812"
-flake8 = "^3.9.0"
-pylint = "^2.7.4"
-pyupgrade = "^2.12.0"
-autoflake = "^1.4"
-isort = "^5.8.0"
-black = "^20.8b1"
+bump2version = "^1.0.1"
+taskipy = "^1.8.1"
+
+[tool.taskipy.tasks]
+tests = "bats $(find ./tests -name '*.bats' | sort)"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

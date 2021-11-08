@@ -1,0 +1,4 @@
+{
+  "project_name": "my_awesome_microservice",
+  "project_description": "This is the code for {{cookiecutter.project_name}}"
+}

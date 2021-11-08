@@ -1,4 +1,4 @@
-from microservice.routes.routers import ping
+from {{cookiecutter.project_name}}.routes.routers import ping
 
 from fastapi_versioning import version  # type: ignore
 

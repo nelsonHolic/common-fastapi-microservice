@@ -4,9 +4,9 @@ from fastapi import Depends, HTTPException, status, Response
 from fastapi.security import OAuth2PasswordRequestForm
 from pydantic import BaseModel
 
-from microservice import constants
-from microservice.routes.routers import auth
-from microservice.services.oauth import (
+from {{cookiecutter.project_name}} import constants
+from {{cookiecutter.project_name}}.routes.routers import auth
+from {{cookiecutter.project_name}}.services.oauth import (
     authenticate_user, fake_users_db, Token, ACCESS_TOKEN_EXPIRE_MINUTES,
     create_access_token, get_user_by_username, UserPayload, create_user,
 )

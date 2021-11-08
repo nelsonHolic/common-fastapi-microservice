@@ -1,8 +1,8 @@
 version: '3.2'
 services:
 
-  microservice-postgres-db:
-    container_name: microservice-postgres-db
+  {{cookiecutter.project_name}}-postgres-db:
+    container_name: {{cookiecutter.project_name}}-postgres-db
     image: "postgres:14-alpine"
     ports:
       - "5432:5432"
@@ -17,8 +17,8 @@ services:
       - net
 
 
-  microservice-pgadmin:
-    container_name: microservice-pgadmin
+  {{cookiecutter.project_name}}-pgadmin:
+    container_name: {{cookiecutter.project_name}}-pgadmin
     image: "dpage/pgadmin4"
     ports:
       - "5050:80"
@@ -29,11 +29,11 @@ services:
     networks:
       - net
     depends_on:
-      - microservice-postgres-db
+      - {{cookiecutter.project_name}}-postgres-db
 
-  microservice:
-    container_name: microservice
-    image: microservice
+  {{cookiecutter.project_name}}:
+    container_name: {{cookiecutter.project_name}}
+    image: {{cookiecutter.project_name}}
     build:
       context: .
     environment:
@@ -45,7 +45,7 @@ services:
     networks:
       - net
     depends_on:
-      - microservice-postgres-db
+      - {{cookiecutter.project_name}}-postgres-db
 
 
 networks:

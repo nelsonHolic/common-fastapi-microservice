@@ -10,6 +10,6 @@ RUN poetry install
 RUN poetry config virtualenvs.create false \
   && poetry install $(test "$YOUR_ENV" == production && echo "--no-dev") --no-interaction --no-ansi
 
-COPY microservice/ /code/intent_detector_service
+COPY {{cookiecutter.project_name}}/ /code/{{cookiecutter.project_name}}
 
-CMD ["poetry", "run", "uvicorn", "intent_detector_service.app:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["poetry", "run", "uvicorn", "{{cookiecutter.project_name}}.app:app", "--host", "0.0.0.0", "--port", "80"]
