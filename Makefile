@@ -31,3 +31,9 @@ lint: ## linting process
 
 mypy: ## Check typing
 	@ python -m mypy
+
+migration:
+	./scripts/env.sh python3 -m alembic.config -c $(PROJECT_NAME)/database/alembic.ini revision --autogenerate -m "$$NAME"
+
+migrate:
+	./scripts/env.sh python3 -m alembic.config -c $(PROJECT_NAME)/database/alembic.ini upgrade head

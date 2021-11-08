@@ -5,6 +5,7 @@ from sqlalchemy import pool
 
 from alembic import context
 
+from microservice.database import db_config
 from microservice.database.models import Base
 
 # this is the Alembic Config object, which provides
@@ -16,6 +17,8 @@ config = context.config
 fileConfig(config.config_file_name)
 
 target_metadata = Base.metadata
+
+config.set_main_option("sqlalchemy.url", str(db_config.pg_url))
 
 # other values from the config, defined by the needs of env.py,
 # can be acquired:
