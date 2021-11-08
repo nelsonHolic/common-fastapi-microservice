@@ -1,0 +1,953 @@
+{
+  "intent_list": [
+    "PlayMusic",
+    "SayHi",
+    "TellAJoke",
+    "ShowMovies",
+    "ShowCommandsList",
+    "TurnOnTheLights",
+    "TurnOffTheLights"
+  ],
+  "entities": [
+    {
+      "name": "Music",
+      "children": []
+    },
+    {
+      "name": "Movie",
+      "children": []
+    }
+  ],
+  "example_utterances": [
+    {
+      "text": "Me gustaria escuchar musica de arctic monkeys",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 20,
+              "endCharIndex": 44,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Reproduce musica",
+      "intentName": "PlayMusic",
+      "entityLabels": []
+    },
+    {
+      "text": "Reproduce cualquier cancion",
+      "intentName": "PlayMusic",
+      "entityLabels": []
+    },
+    {
+      "text": "Reproduce canciones de flauta",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 9,
+              "endCharIndex": 28,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Reproduce pistas de guitar hero",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 9,
+              "endCharIndex": 30,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Puedes reproducir la pista de jumanji?",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 17,
+              "endCharIndex": 36,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Puedes reproducir el soundtrack de jumanji?",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 17,
+              "endCharIndex": 41,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Pon musica de nintendo",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 3,
+              "endCharIndex": 21,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Reproduce musica de nintendo",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 5,
+              "endCharIndex": 14,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Puedes poner musica?",
+      "intentName": "PlayMusic",
+      "entityLabels": []
+    },
+    {
+      "text": "Puedes colocar musica?",
+      "intentName": "PlayMusic",
+      "entityLabels": []
+    },
+    {
+      "text": "Puedes reproducir musica?",
+      "intentName": "PlayMusic",
+      "entityLabels": []
+    },
+    {
+      "text": "Podrias reproducir musica rap?",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 18,
+              "endCharIndex": 28,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Podrias reproducir musica de pink floid?",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 18,
+              "endCharIndex": 38,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Puedes poner musica de avril lavigne?",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 12,
+              "endCharIndex": 21,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Puedes poner musica fiestera?",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 12,
+              "endCharIndex": 27,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Conoces canciones de hip hop?",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 7,
+              "endCharIndex": 27,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Por favor reproduce cualquier album de Eminem",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 29,
+              "endCharIndex": 44,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Me gustaria escuchar el nuevo album de Rhianna",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 20,
+              "endCharIndex": 45,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Quiero escuchar musica de linking park",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 15,
+              "endCharIndex": 37,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Quisiera escuchar musica de linking park",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 17,
+              "endCharIndex": 39,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Pon me musica de linking park",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 6,
+              "endCharIndex": 28,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Reproduce soundtracks de anime",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 9,
+              "endCharIndex": 29,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Pon soundtracks de anime",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 4,
+              "endCharIndex": 24,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Coloca soundtracks de anime",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 6,
+              "endCharIndex": 26,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "reproduce guns and roses",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 9,
+              "endCharIndex": 23,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "reproducir guns and roses",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 10,
+              "endCharIndex": 24,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Quiero escuchar complicated de Avril Lavigne",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 15,
+              "endCharIndex": 43,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Quiero oir uptown girl de billy joe",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 10,
+              "endCharIndex": 34,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Conoces november's rain de guns and roses?",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 7,
+              "endCharIndex": 39,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Puedes poner musica funky?",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 12,
+              "endCharIndex": 24,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Quiero oir pistas musicales de video juegos",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 10,
+              "endCharIndex": 39,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Quiero escuchar soundtracks de video juegos",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 15,
+              "endCharIndex": 41,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Reproducir soundtracks de peliculas",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 10,
+              "endCharIndex": 34,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Pon soundtracks de peliculas",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 3,
+              "endCharIndex": 27,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "pon musica relajante",
+      "intentName": "PlayMusic",
+      "entityLabels": [
+          {
+              "startCharIndex": 3,
+              "endCharIndex": 19,
+              "entityName": "Music",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Enciende la musica",
+      "intentName": "PlayMusic",
+      "entityLabels": []
+    },
+    {
+      "text": "dame una lista de peliculas para ver",
+      "intentName": "ShowMovies",
+      "entityLabels": []
+    },
+    {
+      "text": "dame una lista de peliculas para mirar",
+      "intentName": "ShowMovies",
+      "entityLabels": []
+    },
+    {
+      "text": "dame varias peliculas para ver",
+      "intentName": "ShowMovies",
+      "entityLabels": []
+    },
+    {
+      "text": "Quiero ver las peliculas de avatar",
+      "intentName": "ShowMovies",
+      "entityLabels": [
+          {
+              "startCharIndex": 27,
+              "endCharIndex": 33,
+              "entityName": "Movie",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Dame una lista de filmes de lucas films",
+      "intentName": "ShowMovies",
+      "entityLabels": [
+          {
+              "startCharIndex": 27,
+              "endCharIndex": 38,
+              "entityName": "Movie",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "dame una lista de pelicula de la filmografia de tarantino",
+      "intentName": "ShowMovies",
+      "entityLabels": [
+          {
+              "startCharIndex": 32,
+              "endCharIndex": 57,
+              "entityName": "Movie",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Pon peliculas de anime",
+      "intentName": "ShowMovies",
+      "entityLabels": [
+          {
+              "startCharIndex": 3,
+              "endCharIndex": 21,
+              "entityName": "Movie",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "reproduce peliculas de princesas de disney",
+      "intentName": "ShowMovies",
+      "entityLabels": [
+          {
+              "startCharIndex": 9,
+              "endCharIndex": 41,
+              "entityName": "Movie",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "reproducir peliculas de princesas de disney",
+      "intentName": "ShowMovies",
+      "entityLabels": [
+          {
+              "startCharIndex": 10,
+              "endCharIndex": 42,
+              "entityName": "Movie",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Quiero ver la filmografia de star wars",
+      "intentName": "ShowMovies",
+      "entityLabels": [
+          {
+              "startCharIndex": 13,
+              "endCharIndex": 36,
+              "entityName": "Movie",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Quiero mirar la filmografia de star wars",
+      "intentName": "ShowMovies",
+      "entityLabels": [
+          {
+              "startCharIndex": 15,
+              "endCharIndex": 38,
+              "entityName": "Movie",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Me gustaria ver una pelicula larga",
+      "intentName": "ShowMovies",
+      "entityLabels": [
+          {
+              "startCharIndex": 19,
+              "endCharIndex": 33,
+              "entityName": "Movie",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Muestrame las ultimas peliculas de marvel studios",
+      "intentName": "ShowMovies",
+      "entityLabels": [
+          {
+              "startCharIndex": 21,
+              "endCharIndex": 48,
+              "entityName": "Movie",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Quiero ver peliculas de algun estudio reconocido",
+      "intentName": "ShowMovies",
+      "entityLabels": []
+    },
+    {
+      "text": "Me gustaria ver una pelicula de miedo",
+      "intentName": "ShowMovies",
+      "entityLabels": [
+          {
+              "startCharIndex": 19,
+              "endCharIndex": 36,
+              "entityName": "Movie",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Muestrame algun filme de terror",
+      "intentName": "ShowMovies",
+      "entityLabels": [
+          {
+              "startCharIndex": 15,
+              "endCharIndex": 29,
+              "entityName": "Movie",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Mostrar la saga de harry potter",
+      "intentName": "ShowMovies",
+      "entityLabels": [
+          {
+              "startCharIndex": 10,
+              "endCharIndex": 30,
+              "entityName": "Movie",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Puedes mostrarme el trailer de The amazing spiderman?",
+      "intentName": "ShowMovies",
+      "entityLabels": [
+          {
+              "startCharIndex": 30,
+              "endCharIndex": 51,
+              "entityName": "Movie",
+              "children": []
+          }
+      ]
+    },
+    {
+      "text": "Quiero ver el trailer de algun pelicula?",
+      "intentName": "ShowMovies",
+      "entityLabels": []
+    },
+    {
+      "text": "Dime una broma",
+      "intentName": "TellAJoke",
+      "entityLabels": []
+    },
+    {
+      "text": "Cuentame una broma",
+      "intentName": "TellAJoke",
+      "entityLabels": []
+    },
+    {
+      "text": "cuentame un chiste",
+      "intentName": "TellAJoke",
+      "entityLabels": []
+    },
+    {
+      "text": "dime un chiste",
+      "intentName": "TellAJoke",
+      "entityLabels": []
+    },
+    {
+      "text": "di un chiste",
+      "intentName": "TellAJoke",
+      "entityLabels": []
+    },
+    {
+      "text": "di un broma",
+      "intentName": "TellAJoke",
+      "entityLabels": []
+    },
+    {
+      "text": "Say something funny",
+      "intentName": "TellAJoke",
+      "entityLabels": []
+    },
+    {
+      "text": "di algo divertido",
+      "intentName": "TellAJoke",
+      "entityLabels": []
+    },
+    {
+      "text": "di algo gracioso",
+      "intentName": "TellAJoke",
+      "entityLabels": []
+    },
+    {
+      "text": "cuentame algo gracioso",
+      "intentName": "TellAJoke",
+      "entityLabels": []
+    },
+    {
+      "text": "dime algo gracioso",
+      "intentName": "TellAJoke",
+      "entityLabels": []
+    },
+    {
+      "text": "conoces algun chiste?",
+      "intentName": "TellAJoke",
+      "entityLabels": []
+    },
+    {
+      "text": "conoces alguna broma?",
+      "intentName": "TellAJoke",
+      "entityLabels": []
+    },
+    {
+      "text": "Que es lo mas gracioso que puedes decir?",
+      "intentName": "TellAJoke",
+      "entityLabels": []
+    },
+    {
+      "text": "Que es lo mas divertido que puedes decir?",
+      "intentName": "TellAJoke",
+      "entityLabels": []
+    },
+    {
+      "text": "Sabes lo que es un chiste?",
+      "intentName": "TellAJoke",
+      "entityLabels": []
+    },
+    {
+      "text": "Sabes lo que es una broma?",
+      "intentName": "TellAJoke",
+      "entityLabels": []
+    },
+    {
+      "text": "no eres capaz de contar un chiste",
+      "intentName": "TellAJoke",
+      "entityLabels": []
+    },
+    {
+      "text": "no eres capaz de hacer un chiste",
+      "intentName": "TellAJoke",
+      "entityLabels": []
+    },
+    {
+      "text": "puedes hacer un chiste?",
+      "intentName": "TellAJoke",
+      "entityLabels": []
+    },
+    {
+      "text": "Conoces algun chiste?",
+      "intentName": "TellAJoke",
+      "entityLabels": []
+    },
+    {
+      "text": "Conoces alguna broma?",
+      "intentName": "TellAJoke",
+      "entityLabels": []
+    },
+    {
+      "text": "Dime algo divertido",
+      "intentName": "TellAJoke",
+      "entityLabels": []
+    },
+    {
+      "text": "Cuentame algo como un chiste",
+      "intentName": "TellAJoke",
+      "entityLabels": []
+    },
+    {
+      "text": "Quiero reirme",
+      "intentName": "TellAJoke",
+      "entityLabels": []
+    },
+    {
+      "text": "haz me reir",
+      "intentName": "TellAJoke",
+      "entityLabels": []
+    },
+    {
+      "text": "Estoy aburrido",
+      "intentName": "TellAJoke",
+      "entityLabels": []
+    },
+    {
+      "text": "Alegrame",
+      "intentName": "TellAJoke",
+      "entityLabels": []
+    },
+    {
+      "text": "Hi",
+      "intentName": "SayHi",
+      "entityLabels": []
+    },
+    {
+      "text": "Hello",
+      "intentName": "SayHi",
+      "entityLabels": []
+    },
+    {
+      "text": "Hola",
+      "intentName": "SayHi",
+      "entityLabels": []
+    },
+    {
+      "text": "Ola",
+      "intentName": "SayHi",
+      "entityLabels": []
+    },
+    {
+      "text": "Hey, como estas?",
+      "intentName": "SayHi",
+      "entityLabels": []
+    },
+    {
+      "text": "como te sientes?",
+      "intentName": "SayHi",
+      "entityLabels": []
+    },
+    {
+      "text": "buenas",
+      "intentName": "SayHi",
+      "entityLabels": []
+    },
+    {
+      "text": "buenas tardes",
+      "intentName": "SayHi",
+      "entityLabels": []
+    },
+    {
+      "text": "buenos dias",
+      "intentName": "SayHi",
+      "entityLabels": []
+    },
+    {
+      "text": "saludos",
+      "intentName": "SayHi",
+      "entityLabels": []
+    },
+    {
+      "text": "Que puedes hacer?",
+      "intentName": "ShowCommandsList",
+      "entityLabels": []
+    },
+    {
+      "text": "Que sabes hacer?",
+      "intentName": "ShowCommandsList",
+      "entityLabels": []
+    },
+    {
+      "text": "muestrame los comandos",
+      "intentName": "ShowCommandsList",
+      "entityLabels": []
+    },
+    {
+      "text": "que comandos puedes ejecutar?",
+      "intentName": "ShowCommandsList",
+      "entityLabels": []
+    },
+    {
+      "text": "lista de opciones",
+      "intentName": "ShowCommandsList",
+      "entityLabels": []
+    },
+    {
+      "text": "lista de comandos",
+      "intentName": "ShowCommandsList",
+      "entityLabels": []
+    },
+    {
+      "text": "Que puedo hacer?",
+      "intentName": "ShowCommandsList",
+      "entityLabels": []
+    },
+    {
+      "text": "Que podemos hacer?",
+      "intentName": "ShowCommandsList",
+      "entityLabels": []
+    },
+    {
+      "text": "Muestrame las opciones",
+      "intentName": "ShowCommandsList",
+      "entityLabels": []
+    },
+    {
+      "text": "Necesito ayuda",
+      "intentName": "ShowCommandsList",
+      "entityLabels": []
+    },
+    {
+      "text": "Puedes ayudarme?",
+      "intentName": "ShowCommandsList",
+      "entityLabels": []
+    },
+    {
+      "text": "Estoy perdido",
+      "intentName": "ShowCommandsList",
+      "entityLabels": []
+    },
+    {
+      "text": "No se que puedo hacer",
+      "intentName": "ShowCommandsList",
+      "entityLabels": []
+    },
+    {
+      "text": "No se que hacer",
+      "intentName": "ShowCommandsList",
+      "entityLabels": []
+    },
+    {
+      "text": "Cuales son los comandos disponibles?",
+      "intentName": "ShowCommandsList",
+      "entityLabels": []
+    },
+    {
+      "text": "Comandos",
+      "intentName": "ShowCommandsList",
+      "entityLabels": []
+    },
+    {
+      "text": "Opciones",
+      "intentName": "ShowCommandsList",
+      "entityLabels": []
+    },
+    {
+      "text": "encender luces",
+      "intentName": "TurnOnTheLights",
+      "entityLabels": []
+    },
+    {
+      "text": "necesito luz",
+      "intentName": "TurnOnTheLights",
+      "entityLabels": []
+    },
+    {
+      "text": "esta muy oscuro",
+      "intentName": "TurnOnTheLights",
+      "entityLabels": []
+    },
+    {
+      "text": "puedes alumbrar?",
+      "intentName": "TurnOnTheLights",
+      "entityLabels": []
+    },
+    {
+      "text": "enciende las luces",
+      "intentName": "TurnOnTheLights",
+      "entityLabels": []
+    },
+    {
+      "text": "conecta las luces",
+      "intentName": "TurnOnTheLights",
+      "entityLabels": []
+    },
+    {
+      "text": "enciende me las luces",
+      "intentName": "TurnOnTheLights",
+      "entityLabels": []
+    },
+    {
+      "text": "apaga las luces",
+      "intentName": "TurnOffTheLights",
+      "entityLabels": []
+    },
+    {
+      "text": "quita las luces",
+      "intentName": "TurnOffTheLights",
+      "entityLabels": []
+    },
+    {
+      "text": "remueve las luces",
+      "intentName": "TurnOffTheLights",
+      "entityLabels": []
+    },
+    {
+      "text": "desconecta las luces",
+      "intentName": "TurnOffTheLights",
+      "entityLabels": []
+    },
+    {
+      "text": "desconecta la luz",
+      "intentName": "TurnOffTheLights",
+      "entityLabels": []
+    }
+  ]
+}
