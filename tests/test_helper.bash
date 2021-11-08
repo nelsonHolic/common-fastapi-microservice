@@ -191,7 +191,7 @@ run_relative() {
 
 
 project_dir="alphabet"
-repo_dir="$PWD/$project_dir/$project_dir"
+repo_dir="$PWD/$project_dir/repo"
 
 cleanup() {
     # handle case where teardown doesn't run because of unhandled failure
@@ -212,7 +212,8 @@ setup() {
         poetry run cookiecutter . \
             --overwrite-if-exists \
             --no-input \
-            project_name="$repo_dir" \
+            project_name="$project_dir" \
+            repo_dir="$repo_dir" \
             editor="echo"
 
         # setup example repo
