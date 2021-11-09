@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, Boolean
 
 from {{cookiecutter.project_name}}.database.models.base import Base
 

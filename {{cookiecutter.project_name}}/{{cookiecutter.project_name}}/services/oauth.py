@@ -82,7 +82,7 @@ def get_user(username: Optional[str], db_session: Session) -> Optional[UserInDB]
         return UserInDB(
             username=user.username,
             email=user.email,
-            full_name=user.first_name + user.last_name,
+            full_name=user.full_name,
             disabled=False,
             hashed_password=user.password
         )
