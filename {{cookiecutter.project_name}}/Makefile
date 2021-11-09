@@ -33,7 +33,10 @@ mypy: ## Check typing
 	@ python -m mypy
 
 migration:
-	./scripts/env.sh python3 -m alembic.config -c $(PROJECT_NAME)/database/alembic.ini revision --autogenerate -m "$$NAME"
+	python3 -m alembic.config -c $(PROJECT_NAME)/database/alembic.ini revision --autogenerate -m "$$NAME"
 
 migrate:
-	./scripts/env.sh python3 -m alembic.config -c $(PROJECT_NAME)/database/alembic.ini upgrade head
+	python3 -m alembic.config -c $(PROJECT_NAME)/database/alembic.ini upgrade head
+
+run-tests:
+	python3 -m pytest tests
