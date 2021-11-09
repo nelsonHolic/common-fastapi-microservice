@@ -31,24 +31,23 @@ services:
     depends_on:
       - {{cookiecutter.project_name}}-postgres-db
 
-  {{cookiecutter.project_name}}:
-    container_name: {{cookiecutter.project_name}}
-    image: {{cookiecutter.project_name}}
-    build:
-      context: .
-    environment:
-      ALLOW_ORIGINS: ".*"
-    env_file:
-      - .env
-    environment:
-      DB_HOST: {{cookiecutter.project_name}}-postgres-db
-      DB_PORT: "5432"
-    ports:
-      - "8000:8000"
-    networks:
-      - net
-    depends_on:
-      - {{cookiecutter.project_name}}-postgres-db
+#  {{cookiecutter.project_name}}-web:
+#    container_name: {{cookiecutter.project_name}}-web
+#    image: {{cookiecutter.project_name}}
+#    build:
+#      context: .
+#    environment:
+#      ALLOW_ORIGINS: ".*"
+#      DB_HOST: {{cookiecutter.project_name}}-postgres-db
+#      DB_PORT: "5432"
+#    env_file:
+#      - .env
+#    ports:
+#      - "8000:8000"
+#    networks:
+#      - net
+#    depends_on:
+#      - {{cookiecutter.project_name}}-postgres-db
 
 
 networks:

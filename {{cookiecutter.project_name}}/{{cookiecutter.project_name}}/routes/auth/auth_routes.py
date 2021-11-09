@@ -5,6 +5,7 @@ from fastapi.security import OAuth2PasswordRequestForm
 from pydantic import BaseModel
 
 from {{cookiecutter.project_name}} import constants
+from {{cookiecutter.project_name}}.database import db_config
 from {{cookiecutter.project_name}}.routes.routers import auth
 from {{cookiecutter.project_name}}.services.oauth import (
     authenticate_user, fake_users_db, Token, ACCESS_TOKEN_EXPIRE_MINUTES,
@@ -13,7 +14,7 @@ from {{cookiecutter.project_name}}.services.oauth import (
 
 
 @auth.post("/users")
-async def create_user_endpoint(user_data: UserPayload) -> str:
+async def create_user_endpoint(user_data: UserPayload, db_session: Session = Depends(db_config.session)) -> str:
     if get_user_by_username(user_data.username):
         raise HTTPException(status_code=403, detail="That username is already in used")
 
@@ -23,7 +24,9 @@ async def create_user_endpoint(user_data: UserPayload) -> str:
 
 
 @auth.post("/token", response_model=Token)
-async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends()):
+async def login_for_access_token(
+    form_data: OAuth2PasswordRequestForm = Depends(),  db_session: Session = Depends(db_config.session)
+):
     user = authenticate_user(fake_users_db, form_data.username, form_data.password)
     if not user:
         raise HTTPException(

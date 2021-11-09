@@ -48,15 +48,26 @@ class DatabaseConfig:
         """Return the default engine."""
         return self.get_engine()
 
-    @contextmanager
     def session(self) -> Generator[OrmSession, None, None]:
         """Provides a session."""
         if not self.Session:
             self.Session = sessionmaker(autocommit=False, autoflush=False, bind=self.db_engine)
+        try:
+            session = self.Session()
+            yield session
+        finally:
+            session.close()
 
-        session = self.Session()
-        yield session
-        session.close()
+    @contextmanager
+    def session_scope(self) -> Generator[OrmSession, None, None]:
+        """Provides a session."""
+        if not self.Session:
+            self.Session = sessionmaker(autocommit=False, autoflush=False, bind=self.db_engine)
+        try:
+            session = self.Session()
+            yield session
+        finally:
+            session.close()
 
 
 db_config = DatabaseConfig()

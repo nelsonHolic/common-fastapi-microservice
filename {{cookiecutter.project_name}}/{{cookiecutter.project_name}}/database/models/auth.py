@@ -7,9 +7,9 @@ class User(Base):
     __tablename__ = "users"
 
     id = Column(Integer, primary_key=True, index=True)
-    username = Column(String, index=True)
-    password = Column(String)
-    email = Column(String)
-    first_name = Column(String)
-    last_name = Column(String)
-    age = Column(Integer)
+    full_name = Column(String, default="")
+    username = Column(String, index=True, nullable=False)
+    password = Column(String, nullable=False)
+    email = Column(String, nullable=True)
+    age = Column(Integer, nullable=True)
+    disabled = Column(Boolean, default=False)
