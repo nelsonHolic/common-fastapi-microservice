@@ -40,6 +40,9 @@ services:
       ALLOW_ORIGINS: ".*"
     env_file:
       - .env
+    environment:
+      DB_HOST: {{cookiecutter.project_name}}-postgres-db
+      DB_PORT: "5432"
     ports:
       - "8000:8000"
     networks:
